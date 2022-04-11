@@ -6,7 +6,6 @@
 
 # file
 *.sql
-swagger-output.json
 
 # Logs
 logs
