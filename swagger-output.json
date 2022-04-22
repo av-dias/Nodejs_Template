@@ -12,7 +12,7 @@
   ],
   "paths": {
     "/": {
-      "post": {
+      "get": {
         "description": "",
         "parameters": [],
         "responses": {

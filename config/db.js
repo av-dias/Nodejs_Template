@@ -1,5 +1,6 @@
 const mysql = require("mysql");
 require("dotenv").config();
+const { _info, _error, _warn } = require("../loaders/chalk");
 
 const db = mysql.createPool({
   connectionLimit: 10,
@@ -12,9 +13,9 @@ const db = mysql.createPool({
 });
 
 db.getConnection((err) => {
+  console.error(_warn("DATABASE NOT IMPLEMENTED!"));
   if (err) {
-    console.error("Database connection error! (" + err.code + ")");
-    console.error("DATABASE NOT IMPLEMENTED!");
+    console.error(_error("Database connection error! (" + err.code + ")"));
   }
 });
 
